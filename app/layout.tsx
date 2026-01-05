@@ -1,8 +1,9 @@
 import "./globals.css";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Sevendot VFX – Transforming Pixels to Emotions",
-  description: "Matchmove, Roto, Paint & Compositing services by Sevendot VFX",
+export const metadata: Metadata = {
+  title: "Sevendot VFX",
+  description: "Transforming Pixels to Emotions",
 };
 
 export default function RootLayout({
@@ -12,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
