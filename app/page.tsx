@@ -129,7 +129,16 @@ export default function VFXStudioSite() {
   );
 }
 
-function ServiceCard({ icon, title, desc }) {
+function ServiceCard({
+  icon,
+  title,
+  desc,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}) {
+
   return (
     <motion.div whileHover={{ y: -8 }} className="bg-neutral-900 border border-neutral-800 p-6 text-center">
       <div className="mb-4 flex justify-center">{icon}</div>
